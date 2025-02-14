@@ -1,8 +1,23 @@
-import React from 'react'
+"use client"
+
+import React, { useState } from 'react'
+import SearchManufacturer from './SearchManufacturer'
+import { manufacturers } from '@/constants'
 
 const SearchBar = () => {
+
+  const [manufacturer, setManufacturer] = useState('');
+
+  const handleSearch =() =>{}
   return (
-    <div>SearchBar</div>
+     <form className='searchbar' onSubmit={handleSearch}>
+      <div className="seachbar__item">
+        <SearchManufacturer
+        manufacturer={manufacturer}
+        setManufacturer={setManufacturer}
+        />
+      </div>
+     </form>
   )
 }
 

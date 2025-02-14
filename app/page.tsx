@@ -1,4 +1,4 @@
-import { Hero } from "@/components";
+import { CustomFilter, Hero, SearchBar } from "@/components";
 
 export default function Home() {
   return (   
@@ -20,9 +20,9 @@ export default function Home() {
             >
               <CustomFilter title="fuel"/>
               <CustomFilter title="year"/>
-            </div>
           </div>
         </div>
-      </main>   
+      </div>
+    </main>   
   );
 }
